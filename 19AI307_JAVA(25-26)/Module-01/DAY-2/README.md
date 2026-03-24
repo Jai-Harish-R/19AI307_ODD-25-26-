@@ -26,9 +26,11 @@ Print "Access Denied".
 End the program.
 ## PROGRAM:
 ```JAVA
-Program to implement a conditional statement using Java
-Developed by: Harisankar.S
-RegisterNumber: 212224240051
+/*
+Program to implement variables and Operators using Java
+Developed by: JAI HARISH R
+RegisterNumber: 212224040124
+*/
 
 ## SOURCE CODE:
 import java.util.Scanner;
