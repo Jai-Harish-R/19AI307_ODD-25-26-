@@ -37,10 +37,11 @@ Calculate the remainder of num1 divided by num2, and display the result.
 Close the Scanner object.
 ## PROGRAM:
 ```JAVA
+/*
 Program to implement variables and Operators using Java
 Developed by: JAI HARISH R
 RegisterNumber: 212224040124
-
+*/
 
 Sourcecode.java:
 import java.util.Scanner;
