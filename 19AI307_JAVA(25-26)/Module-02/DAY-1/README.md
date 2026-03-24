@@ -1,72 +1,84 @@
-## Ex.No:1(A) INTRODUCTION TO JAVA PROGRAMMING, DATA TYPES, VARIABLES AND OPERATORS
+# Ex.No:2(A) CLASS AND OBJECT
+
 ## QUESTION:
-
-Lovely has mastered printing in Java, and now she wants to learn how arithmetic operators work. She’s curious about how Java can add, subtract, multiply, divide, and find remainders of two numbers.
-
-Write a Java program that:
-
-Accepts two integer numbers from the user.
-
-Demonstrates all 5 arithmetic operations:
-
-Addition (+)
-
-Subtraction (-)
-
-Multiplication (*)
-
-Division (/)
-
-Modulus (%)
-
-Displays the result of each operation in a separate line with a clear message.
+Define a class Car with brand (String), color (String), and year (int). Create 2 different objects of Car Assign values to attributes. Print the details of both cars.import java.util.Scanner;
 
 ## AIM:
-Aim: To write a Java program that reads two integer numbers from the user and performs basic arithmetic operations such as addition, subtraction, multiplication, division, and modulus, and displays the results.
 
+To define a class Car with attributes brand, color, and year; create two objects of the class; assign values to their attributes; and print the details of both cars.
 ## ALGORITHM :
-Start the program.
-Create an object of the Scanner class to take input from the user.
-Read the first integer input from the user and store it in variable num1.
-Read the second integer input from the user and store it in variable num2.
-Calculate the sum of num1 and num2, and display the result.
-Calculate the difference (num1 - num2), and display the result.
-Calculate the product of num1 and num2, and display the result.
-Calculate the quotient of num1 divided by num2, and display the result.
-Calculate the remainder of num1 divided by num2, and display the result.
-Close the Scanner object.
+1.	Start the program.
+2.	Import the necessary package 'java.util'
+3.	Create the first object car1 and read its brand, color, and year from the user.
+
+4.Create the second object car2 and read its brand, color, and year.
+
+5.Call printDetails() for car1 to display its information.
+
+6.Call printDetails() for car2 to display its information.
+
+7.Close the scanner and end the program.
+
+
+
+
+
 ## PROGRAM:
-```JAVA
-Program to implement a class & objects using Java
+ ```java
+/*
+Program to implement a Class and Objects using Java
 Developed by: JAI HARISH R
 RegisterNumber: 212224040124
+*/
 
-
-Sourcecode.java:
 import java.util.Scanner;
 
-public class ArithmeticOperations {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+class Car {
+    String brand;
+    String color;
+    int year;
 
-        int num1 = sc.nextInt();
-        int num2 = sc.nextInt();
-
-        System.out.println("Sum = " + (num1 + num2));
-        System.out.println("Difference = " + (num1 - num2));
-        System.out.println("Product = " + (num1 * num2));
-        System.out.println("Quotient = " + (num1 / num2));
-        System.out.println("Remainder = " + (num1 % num2));
-
-        sc.close();
+    void printDetails() {
+        System.out.println("Brand: " + brand);
+        System.out.println("Color: " + color);
+        System.out.println("Year: " + year);
     }
 }
 
-```
-## OUTPUT:
+class prog {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
-<img width="1562" height="444" alt="image" src="https://github.com/user-attachments/assets/615082b8-056f-4fbf-94f3-e5c583cf18f0" />
+        
+        Car car1 = new Car();
+        car1.brand = scanner.nextLine();
+        car1.color = scanner.nextLine();
+        car1.year = scanner.nextInt();
+        scanner.nextLine();
+
+        
+        Car car2 = new Car();
+        car2.brand = scanner.nextLine();
+        car2.color = scanner.nextLine();
+        car2.year = scanner.nextInt();
+
+        car1.printDetails();
+        car2.printDetails();
+
+        scanner.close();
+    }
+}
+```
+
+
+
+
+
+
+## OUTPUT:
+<img width="677" height="771" alt="image" src="https://github.com/user-attachments/assets/a2269422-bdf4-49b2-8840-37d9e5a2f5ec" />
+
 
 
 ## RESULT:
-Therefore the program has been executed successfully.
+Therefore,the program successfully creates two Car objects and assigns values to their attributes.
