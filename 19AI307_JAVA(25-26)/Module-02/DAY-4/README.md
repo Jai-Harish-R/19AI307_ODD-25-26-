@@ -26,18 +26,13 @@ Create a Student object using the constructor.
 
 
 ## PROGRAM:
- ```
+ ```java
 /*
 Program to implement a Variable scope and Constructor using Java
 Developed by: JAI HARISH R
 RegisterNumber: 212224040124
 */
-```
 
-## SOURCE CODE:
-
-
-```
 import java.util.Scanner;
 
 class Student {
